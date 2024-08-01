@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura;
+    text-shadow: 2px 2px 4px rgba(107, 107, 107, 0.7);
+}
+#loaderr {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(200, 144, 240), #a68eec);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+body.dark-mode #loaderr {
+    background: linear-gradient(to right, rgb(200, 144, 240), #a68eec);
+}
+
+#loader1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #9339fb;
+    position: fixed;
+    z-index: 990;
+    top: 0;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loaderr h1 {
+    font-size: 7vw;
+    font-weight: lighter;
+    background: linear-gradient(to right, #362883, #4f069d);
+    -webkit-background-clip: text;
+    color: #ffffff;
+    font-family: futura;
+    position: absolute;
+}
+
+body.dark-mode #loaderr h1 {
+    background: linear-gradient(to right, #512f88, #6c16c8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#loaderr h1:nth-child(1) {
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+#loaderr h1:nth-child(2) {
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+#loaderr h1:nth-child(3) {
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura;
+    font-weight: bold;
+}
+
+body {
+    background-color: #ffb6c1; 
+    color: #2e0854; /* Dark Purple */
+}
+
+#loaderr {
+    /* Loader colors unchanged */
+}
+
+#loader1 {
+    /* Loader colors unchanged */
+}
+
+.heading {
+    font-size: 8vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #603090; /* Dark Purple */
+    background-color: #ffb6c1; /* Light Pink */
+    padding: 0 5vw;
+}
+.heading1{
+    background: linear-gradient(to top, #ffb6c1, #9370db);
+}
+.fav {
+    display: flex;
+    background-color: #9370db; /* Medium Purple */
+}
+
+.leftfav {
+    width: 50vw;
+    height: 100vh;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f0f8ff; /* Alice Blue */
+    padding-left: 6vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.rightfav {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightfav img {
+    width: 70%;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.662);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.left2 {
+    padding-right: 6vw;
+}
+
+.third img {
+    width: 73%;
+}
+
+.newone {
+    background: none;
+    background-color: #9370db;
+    color: #d6c6e5;
+}
+
+.heading img {
+    width: 55%;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.662);
+    border: 2px solid white;
+}
+
+.aa {
+    width: 100vw;
+    text-align: center;
+}
+
+.bb {
+    width: 100vw;
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 5vw;
+}
+
+.cc {
+    width: 100vw;
+    padding-top: 1vw;
+    font-size: 2vw;
+    padding-left: 30vw;
+}
+
+.newtwo {
+    display: block;
+}
+
+.space1 {
+    background: linear-gradient(to bottom, #ffb6c1, #9370db); /* Light Pink to Medium Purple */
+    height: 15vw;
+}
+
+.space2 {
+    background: linear-gradient(to top, #ffb6c1, #9370db); /* Light Pink to Medium Purple */
+    height: 15vw;
+}
+img{
+    border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+    .heading {
+        height: auto;
+        padding: 15vw 4vw;
+    }
+
+    .fav {
+        display: block;
+    }
+
+    .rightfav {
+        width: 100vw;
+        height: auto;
+        padding: 6vw 0;
+    }
+    .leftfav {
+        width: 100vw;
+        height: auto;
+        padding: 10vw 6vw;
+    }
+    .heading img {
+        width: 80%;
+    }
+}
